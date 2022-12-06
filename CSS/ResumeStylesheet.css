@@ -1,0 +1,150 @@
+@import url(GenericElements.css);
+
+@media only screen and (max-width: 1024px) {
+    #chars h3{
+        width:75%;
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #chars h3{
+        width:75%;
+        font-size: 1.7em;
+    }
+}
+
+:root{
+    --expfontsz: 1rem;
+    --bkgroundfontsz: 1rem;
+    --charsfontsz: 1rem;
+}
+
+#primary .container{
+    margin:2%;
+    border: 1rem solid rgb(33, 33, 41); 
+    height: auto;
+}
+
+#bkground{
+    font-size: var(--bkgroundfontsz);
+    text-align:center;
+    background-color: rgba(64, 64, 125,0.5);
+}
+
+#primary #title{
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.divis{
+    position: relative;
+    height:0.5rem;
+    background-color: rgb(36, 130, 98);
+    border: 0.2rem solid rgba(64, 64, 125,0.5);
+}
+
+#primary .compitencies div{
+    margin: 2% 2% 6% 2%;
+}
+
+#primary .Cont h2{
+    margin-bottom: 1%;
+    color: rgb(33, 33, 41);
+    text-decoration: underline;
+    font-size:2.2em;
+}
+
+#primary .Cont h3{   
+    color: rgb(36, 130, 98);
+    margin-left:3%;
+}
+
+
+
+#exp{
+    font-size: var(--expfontsz);
+    width:95%;
+    margin: 2% 1% 2% 5%;
+}
+
+#exp h3{
+    font-size:1.7em;
+}
+
+#exp .firstBul li{
+    color: whitesmoke;
+    margin-left:10%;
+    font-size:1em;
+}
+
+.jobs a{
+    color: whitesmoke;
+}
+
+
+#chars{
+    text-align: justify;
+    display: inline-grid;
+    word-break:break-word;
+    font-size: var(--charsfontsz);
+    border: 0.5em solid rgba(64, 64, 125,1);
+    float: right;
+    width:32%;
+    padding:3%;
+    margin: 2%;
+}
+
+#chars div{
+    text-align: left;
+
+}
+
+#chars .skills ul{
+    flex-direction: column;
+    list-style: none;
+}
+.contact a{
+    font-size: 1.25em;
+    color: rgb(36, 130, 98);
+    display: inline-block;
+    margin: 3% 0 3% 5%;   
+    /* text-decoration: none;  */
+}
+
+.skills ul li{
+    margin:2% 0 15% 0;
+}
+
+.skills ul li svg{
+    float: right;    
+    align-items: center;
+    /* -ms-transform: translateY(-70%); 
+    transform: translateY(-70%); */
+}
+
+.skills svg text{
+    fill:rgb(33, 33, 41);
+    font-size: 30px;
+}
+
+.awards ul li{
+    margin: 1% 0 3% 10%;
+    font-size: 1.2em;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/* .fa-phone{
+    float: #;
+    margin-left:70%;
+}
+
+
+.fa-address-book{
+    float: right;
+    margin-right:70%;
+} */
+
+
+

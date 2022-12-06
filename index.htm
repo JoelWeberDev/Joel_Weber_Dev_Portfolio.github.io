@@ -1,0 +1,167 @@
+<!-- Naming discrepencies
+    IMPORTANT!! Ensure that when using these shortcuts the element where it is being implemented has a unique id
+- resp: titles an element as responsive for a specific feature and hence it will change st differeing sizes
+- marg: indactor that there is margin that will be set by a javascript funtion based on the specific screen resolution 
+- dupe: this is followed by parantheses that indacate something to be duplicated to child elements
+- dupeRec: the reciever for the feature to be duplicated
+- txtFt: Make the text fit to the container rather than a retaining a defined size
+- standard: Works with changeRec to make set a parent relative to the dimension of the standard class
+- changeRec: Is the recipient of the dimension parameters of the standard class
+- txtSet: This specifies that some form of paramters are going to be imposed upon the content text and will be handled with javascript-->
+
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> -->
+    <!-- Social images and icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Primary styling -->
+    <link rel="stylesheet" href="CSS\HomeStyle.css">
+    <!-- Jquery source code -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- resizing functionality -->
+    <script type="text/javascript" src="JS\cssSizing.js" id="pageSetup"></script>
+    <!-- Futher page setup -->
+    <meta charset="UTF-8">
+    <title>Joel's Portfolio</title>
+
+</head>
+
+
+
+<body>
+    <header id="genBan" class="col-o-12">
+        <div id="logo-area" class="col-o-12 dupe- (txtSet,txtRstc0.5,fontSz1.5rem,col-o-1,logo)">
+            <a id="initals" class="lgScreen dupeRec" href="index.htm">JW</a>
+            <i id="pile" class="fa fa-bars dupeRec" aria-hidden="true"></i>
+            <h1 id="name" class=""><u>|  Joel Weber  |</u></h1>
+        </div>
+    </header>
+
+    <nav id="menu" class="col-l-1 col-s-4 col-xs-6  ">        
+        <ul id="pages" class="txtSet txtRstc3.7 fontSz1rem">
+            <li>
+                <a id="home" href="index.htm">
+                    <span class="icon"></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li>
+                <a id="about" href="PortfolioAboutMe.htm">
+                    <span class="icon"></span>
+                    <span class="title">About</span>
+                </a>
+            </li>
+            <li>
+                <a id="projects" href="PortfolioProjects.htm">
+                    <span class="icon"></span>
+                    <span class="title">Projects</span>
+                </a>
+            </li>
+            <li>
+                <a id="resume" href="PortfolioResume.htm">
+                    <span class="icon"></span>
+                    <span class="title">Resume</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="primary" class="col-xl-11 col-l-11 col-s-12 col-xs-12 transp base:menu">
+        <div id="vidintro" class="">
+            <h1 id="statement" class="primtitle txtSet txtRstc10 fontSz5rem">Transforming Ideas Into Reality</h1>
+        </div>
+    
+
+        <div id="contentsct" class="changeRec">
+            <div id="leftsct" class="col-o-6 side ">
+                <p id="moto" class="txtSet standard txtRstc6 fontSz7rem">An Inspired 
+                    and Aspiring 
+                    Software Developer
+                </p>
+            </div>
+            <div id="cenln" class="cent **-x"></div>
+            <div id="rightsct" class="col-o-6">
+                <img src="Images\PXL_20220911_184128395.PORTRAIT.jpg">
+            </div>
+        </div>
+        
+        <div id="quoteSct" class="txtSet txtRstc40 fontSz0.8rem" >
+            <!-- Optional alternative quoter wrapper -->
+            <!-- <svg id="triangle" viewbox="100 5 47 25" width="100%" height="100%"  class="expand sib_1">
+                <polygon points="200 15, 0 0, 0 30" style="fill:rgb(33, 33, 41); stroke: rgb(36, 130, 98); stroke-width: 0.3px;" />
+            </svg> -->
+            <div id="quoteCont" class="col-o-12 ">
+                <blockquote>
+                    <p>"As a student, Joel had a passion to learn about computer science and design projects that had real 
+                        world functionality.  He takes initiative in his projects, dealing with problems as they arise and 
+                        new challenges in stride.  Joel is able to implements new ideas quickly and efficiently to ensure 
+                        that the final product meets the high standard he sets for his work.  Joel is willing to learn from 
+                        his mistakes and thoughtfully integrates feedback into future iterations of his work.  "</p>
+                    <cite>
+                        Michael Chmatil - <br>
+                        - High School Technology and Computer Educator
+                    </cite>
+                </blockquote>
+            </div>
+        </div>
+
+
+        <div id="secondsct" class="col-o-12">
+            <h1 class="primtitle">Myself Currently</h1>
+            <div id="pageconts" class="txtSet txtRstc100 fontSz0.8rem dupe- (col-xl-4,col-l-4,col-s-12,col-xs-12) ">
+                <div id="item1" class="dupeRec ">
+                    <a href="PortfolioProjects.htm" id="title">Recent Projects</a>
+                    <p>
+                        I have been given incredible opportunities to develop and participate 
+                        in an expansive variety of projects relevant to computer science. These
+                        projects have fueled a passion and desire to not only learn more, but 
+                        also to design, develop and create products to assist businesses and to 
+                        automate systems especially in fields of agricultural and management interfaces. 
+                    </p>
+                </div>
+                <div id="item2" class="dupeRec">
+                    <a href="PortfolioAboutMe.htm" id="title">More About Me</a>
+                    <p>
+                        I grew up in rural Ontario near Listowel where I attended high school and nurtured a desire to 
+                        develop automated solutions to drive efficiency through both web and robotics applications. When 
+                        I am not programming, I love to play sports, go back country camping, concoct quirky gadgets, listen 
+                        to podcasts and explore Ontario. Furthermore, I am a person who loves God desires to represent 
+                        Christ in every aspect of my life.
+                    </p>
+                </div>
+                <div id="item3" class="dupeRec">
+                    <a href="PortfolioResume.htm" id="title">The Resume</a>
+                    <p>
+                        As an early developer just discovering the power of computer science, I seek to maintain initiative 
+                        in challenging tasks while employing a strong sense of discipline to carry a project through to 
+                        completion. Projects like building a functional webpage to training a machine learning models to 
+                        recognize soybeans pushed me to learn new skills to establish an understanding of the entire system 
+                        while also providing the opportunity to hone my existing competence.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <footer id="information" class=" col-l-12 col-s-12 side **le06 *s*le00 *xs*le00     ">
+        <span id="social">
+            <a id="ig" href="https://www.instagram.com/joel_r_weber/" class="fa fa-instagram"></a>
+            <a id="ld" href="#" class="fa fa-linkedin"></a>
+        </span>
+        
+        <span></span><a id="footLogo" class="cent **-x logo" href="index.htm">JW</a></span>
+
+        <span id="contact" class="txtSet txtRstc20   fontSz0.8rem ">
+            <a href="mailto:joelweberdevelopment@gmail.com" class="email">joelweberdevelopment@gmail.com</a>
+        </span>
+    </footer>
+</body>
+
+</html>
