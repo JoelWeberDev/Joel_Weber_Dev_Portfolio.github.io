@@ -98,6 +98,12 @@
     grid-area: topLeft;
     margin: 5% 0 5% 0;
 }
+
+#cropRow img{
+    margin: 5% auto;
+    width: 90%;
+    height: auto;
+}
 #compitence{
     grid-area: topRight;
     margin: 5% 0 5% 0;

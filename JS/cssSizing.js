@@ -294,6 +294,8 @@ $(document).ready(function(){
     $("#pile").click(function(){
         let menu = $('#menu');
         menu.css('visibility') == 'hidden' ? menu.css('visibility','visible') : menu.css('visibility','hidden')
-    });      
+    });  
+    // $(window).onscroll(function(){
+    //     )     
 });
 
