@@ -155,12 +155,13 @@
         position: sticky;
         z-index: 10;
         visibility: hidden;
+        top:5%;
     }
     #menu ul li a .title{
         font-size: 2.5rem;
     }
     #logo-area{
-        font-size: 100%;
+        font-size: 200%;
     }
     /* Primary content small size settings */
     #contentSct{
@@ -201,6 +202,7 @@
         /* padding: 3rem; */
         align-items: flex-start;    
     }
+    
 }
 
 /* Quick posiotioning */
@@ -232,7 +234,6 @@ p{
     z-index:100;
     background-color: rgb(49, 67, 78);
     justify-content: space-between;
-    height: 3%;
     text-align: center;
 
 

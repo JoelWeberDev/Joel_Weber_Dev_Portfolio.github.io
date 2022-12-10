@@ -14,6 +14,7 @@
         flex-direction: column;
     }
     #primary #projectGrid{
+        font-size: calc(var(--projectGridfontsz) * 2);
         display: block;
         text-align: center;
     }
@@ -21,6 +22,7 @@
 
 @media  screen and (min-width: 1024px) {
     #primary #projectGrid{
+        font-size: var(--projectGridfontsz);
         display: grid;
     }
 }
@@ -63,7 +65,6 @@
 #primary #projectGrid{
     /* display: grid; */
     position: relative;
-    font-size: var(--projectGridfontsz);
     width: 100%;
     height: auto;
     /* aspect-ratio:2/3.5; */
@@ -190,4 +191,10 @@
 #webpage{
     grid-area: bottomRight;
     margin: 5% 0 5% 0;
+}
+
+#webpage img{
+    margin:10% auto;
+    width: 90%;
+    height: auto;
 }

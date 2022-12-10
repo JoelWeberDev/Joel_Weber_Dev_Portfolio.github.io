@@ -4,6 +4,14 @@
 /* Special Resposnive Styling */
 
 @media only screen and (max-width: 1024px) {
+
+    #Passions div{font-size: calc(var(--Passionsfontsz)*1.75);}
+    #Passions #primtitle{
+        font-size: 4em;
+        margin-left:3%;
+    }
+
+    #Visions{font-size:calc(var(--Visionsfontsz)*2);}
     #Visions div{display: inline-block;}
     #Visions #development{position: relative;}
     #Avocations{
@@ -21,6 +29,10 @@
 }
 
 @media only screen and (min-width: 1024px) {
+    #Passions div{font-size: var(--Passionsfontsz);}
+
+    #Visions{font-size:var(--Visionsfontsz);}
+
     #Avocations{flex-direction: row;}
     section{
         padding: 3rem;
@@ -60,10 +72,10 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: var(--Passionsfontsz);
     background-color: rgb(33, 33, 41);
     border:0.13rem solid whitesmoke;
 }
+
 
 #Passions div{
     display:inline-block;
@@ -88,8 +100,11 @@ p {
 }
 
 #Passions div p{
-    font-size: 0.8em;
-    margin: 2% 40% 3% 5%;
+    font-size: 0.9em;
+    /* Keep to accomodate coresponding images as a future update */
+    /* margin: 2% 40% 3% 5%; */
+    margin: 4%;
+
 }
 
 #images{
@@ -166,10 +181,11 @@ p {
 
  #Visions{
     display: block;
-    font-size: var(--Visionsfontsz);
+    /* font-size: var(--Visionsfontsz); */
 }
 
  #Visions h1{
+    margin-left: 3%;
     font-size: 3em;
     padding-bottom: 5%;
     text-align: left;

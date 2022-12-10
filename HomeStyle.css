@@ -1,5 +1,19 @@
 @import url(GenericElements.css);
 
+/* General formatting */
+@media only screen and (max-width: 1024px) {
+    #secondsct{
+        font-size: calc(var(--pagecontsctfontsz)*2.5);
+        /* font-size: 100px; */
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #secondsct{
+        font-size: var(--pagecontsctfontsz);
+    }
+}
+
 :root {
     --motofontsz:7rem;
     --motorem:calc(var(--motofontsz)/7);
@@ -14,6 +28,9 @@
 }
 
 #vidintro{
+    background-image: url("Images\\Nice_footage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size:var(--statementfontsz) ;
     text-align: center;
     border:0.125rem solid whitesmoke;
@@ -133,7 +150,7 @@
     margin-top: 5%;
     z-index: 2;
     position: relative;
-    font-size: var(--pagecontsctfontsz);
+    /* font-size: var(--pagecontsctfontsz); */
 }
 
 #secondsct #primtitle{
@@ -151,7 +168,7 @@
 }
 
 #secondsct #pageconts div{
-    font-size: 0.33em;
+    /* font-size: 0.33em; */
     background-color: rgb(33, 33, 41);
     text-align: center;
     border: 0.125rem solid rgba(36, 130, 98, 1);
@@ -161,7 +178,7 @@
 #secondsct #pageconts #title{
     position: relative;
     color: whitesmoke;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 
@@ -169,7 +186,7 @@
     position: relative;
     text-align: left;
     color: whitesmoke;
-    font-size: 1.125rem;
+    font-size: 1.125em;
     padding: 2.3125rem;
     line-height: 1.5;
 }

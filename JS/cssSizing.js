@@ -92,7 +92,7 @@ class windowObject{
         const width = document.documentElement.clientWidth;
         for (let size in this.layoutSizes) {
             let params = this.layoutSizes[size];
-            if (params[0] < width && width < params[1]) this.size=size;
+            if (params[0] < width && width <= params[1]) this.size=size;
         }
         return(width);
     }
